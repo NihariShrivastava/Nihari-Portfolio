@@ -1,16 +1,47 @@
-# React + Vite
+# ⚡ Nihari Shrivastava - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, responsive portfolio website built with **React.js** and **Vite**, featuring a modern glassmorphism design, dynamic animations, and an interactive theme switcher.
 
-Currently, two official plugins are available:
+![Portfolio Preview](public/assets/nihari_profile.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Modern CSS3 (Variables, Flexbox, Grid)
+- **Icons**: Font Awesome
 
-## React Compiler
+## ✨ Features
+- **🎨 Dynamic Theme Switcher**: 6 stunning color themes (Purple, Blue, Navy, Pink, Green, Teal) preserved with `localStorage`.
+- **📱 Fully Responsive**: Optimized for Mobile, Tablet, and Desktop.
+- **🏃‍♂️ Scroll Animations**: Custom `useScrollReveal` hook for high-performance scroll effects.
+- **📄 Downloadable Resume**: Integrated PDF download.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Local Setup
 
-## Expanding the ESLint configuration
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/nihari-portfolio.git
+    cd nihari-portfolio
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run the dev server**:
+    ```bash
+    npm run dev
+    ```
+
+## 🌍 Deployment (Vercel)
+
+This project is optimized for deployment on Vercel.
+
+1.  Push your code to GitHub.
+2.  Go to [Vercel](https://vercel.com) and sign up with GitHub.
+3.  Click **"Add New Project"** -> **"Import"**.
+4.  Select your `nihari-portfolio` repository.
+5.  Click **Deploy**.
+
+*That's it! Your site will automatically update whenever you push changes.*

@@ -16,7 +16,7 @@ const Hero = () => {
                     <a href="#projects" className="btn btn-primary">My Projects</a>
                     <a href="#contact" className="btn btn-secondary">Contact Me</a>
                     <a href="/assets/nihari_resume.pdf" download="nihari_resume.pdf" className="btn btn-secondary">Download CV <i className="fas fa-download"></i></a>
-                    
+
                 </div>
 
                 <div className="social-links">
@@ -28,7 +28,7 @@ const Hero = () => {
 
             <div className="hero-image reveal reveal-right">
                 <div className="image-wrapper">
-                    <img src="/assets/nihari_profile.png" alt="Nihari Shrivastava" className="avatar-img" />
+                    <img src={`${import.meta.env.BASE_URL}assets/nihari_profile.png`} alt="Nihari Shrivastava" className="avatar-img" />
 
                     {/* Floating Icons decoration */}
                     <div className="floating-icon icon-react"><i className="fab fa-react"></i></div>
