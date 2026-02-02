@@ -6,7 +6,26 @@ const Projects = () => {
             <div className="container">
                 <h2 className="section-title reveal reveal-bottom">Featured Projects</h2>
                 <div className="projects-grid">
+                    
                     {/* Project 1 */}
+                    <div className="project-card reveal reveal-left">
+                        <div className="project-info">
+                            <h3>SummarEASE - AI Summarizer</h3>
+                            <p>A full-stack AI web application that automates content understanding by summarizing text and videos. Features hybrid AI architecture (Hugging Face, Whisper) and RESTful APIs.</p>
+                            <div className="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Hugging Face</span>
+                                <span>Whisper</span>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://summarease-frontend-6ftb.onrender.com/" target="_blank" rel="noreferrer"
+                                    className="btn-sm">Live Demo <i className="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Project 2 */}
                     <div className="project-card reveal reveal-left">
                         <div className="project-info">
                             <h3>AI Internship Recommendation Engine</h3>
@@ -25,7 +44,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    {/* Project 2 */}
+                    {/* Project 3 */}
                     <div className="project-card reveal reveal-right">
                         <div className="project-info">
                             <h3>Smart Helpdesk Ticketing System</h3>
@@ -42,6 +61,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
