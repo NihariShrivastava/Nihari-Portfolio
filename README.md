@@ -2,8 +2,6 @@
 
 A premium, responsive portfolio website built with **React.js** and **Vite**, featuring a modern glassmorphism design, dynamic animations, and an interactive theme switcher.
 
-![Portfolio Preview](public/assets/nihari_profile.png)
-
 ## 🚀 Tech Stack
 - **Framework**: [React](https://react.dev/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
