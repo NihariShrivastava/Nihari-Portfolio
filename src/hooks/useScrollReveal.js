@@ -2,16 +2,11 @@ import { useEffect } from 'react';
 
 const useScrollReveal = () => {
     useEffect(() => {
-        const revealElements = document.querySelectorAll('.reveal');
-
-        const revealCallback = (entries, observer) => {
+        const revealCallback = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    // Optional: Unobserve if you only want it to happen once
-                    // observer.unobserve(entry.target);
                 } else {
-                    // Optional: Remove active class to re-animate on scroll up (if desired)
                     entry.target.classList.remove('active');
                 }
             });
@@ -24,14 +19,25 @@ const useScrollReveal = () => {
 
         const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
 
-        revealElements.forEach(el => revealObserver.observe(el));
+        const observeElements = () => {
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        };
+
+        // Initial observation
+        observeElements();
+
+        // Use MutationObserver to catch elements added by HMR or React state changes
+        const mutationObserver = new MutationObserver(() => {
+            observeElements();
+        });
+        
+        mutationObserver.observe(document.body, { childList: true, subtree: true });
 
         return () => {
-            revealElements.forEach(el => revealObserver.unobserve(el));
+            revealObserver.disconnect();
+            mutationObserver.disconnect();
         };
-    }); // Run on every render/update to catch new elements if necessary, or empty dep array if static.
-    // Given React re-renders, adding simple empty dep array might miss conditional renders. 
-    // Ideally this should be a ref-based solution, but for porting the global class logic, this works.
+    }, []); 
 };
 
 export default useScrollReveal;

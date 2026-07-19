@@ -19,9 +19,9 @@ function AppContent() {
       <Hero />
       <About />
       <Experience />
+      <Skills />
       <Projects />
       <ExtraCurricular />
-      <Skills />
       <Contact />
       <Footer />
     </div>

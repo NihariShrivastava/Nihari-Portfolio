@@ -48,7 +48,7 @@ const About = () => {
                     <div className="about-visual glass-card reveal reveal-right">
                         <div className="cgpa-display">
                             <div className="cgpa-content">
-                                <span className="cgpa-val">9.05</span>
+                                <span className="cgpa-val">8.87</span>
                                 <span className="cgpa-label">CGPA</span>
                             </div>
                             <svg viewBox="0 0 100 100">

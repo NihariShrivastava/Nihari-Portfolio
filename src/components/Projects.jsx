@@ -7,6 +7,29 @@ const Projects = () => {
                 <h2 className="section-title reveal reveal-bottom">Featured Projects</h2>
                 <div className="projects-grid">
                     
+                    {/* Project - Accessory Billing Portal */}
+                    <div className="project-card reveal reveal-left">
+                        <div className="project-info">
+                            <h3>Accessory Billing & Inventory Management Portal</h3>
+                            <p>Innovated a role-based accessory billing and management portal for businesses with multiple counters, supporting Counter Staff, Team Leads, Auditors, and Cashiers through a complete approval workflow. Served 100+ users across 10 stores</p>
+                            <div className="tech-stack">
+                                <span>React 19</span>
+                                <span>TypeScript</span>
+                                <span>Vite</span>
+                                <span>Tailwind CSS</span>
+                                <span>React Router</span>
+                                <span>React Query</span>
+                                <span>Cloudflare</span>
+                                <span>Drizzle ORM</span>
+                                <span>Supabase</span>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://neon-testing-accessoriesportal.viewwork.workers.dev/login" target="_blank" rel="noreferrer"
+                                    className="btn-sm">Live Demo <i className="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Project 1 */}
                     <div className="project-card reveal reveal-left">
                         <div className="project-info">
